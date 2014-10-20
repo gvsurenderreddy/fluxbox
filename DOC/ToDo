@@ -8,4 +8,5 @@ update/correct docs
 rebuild from/include sources
 make like https://github.com/brokenman/xfce.git
  
-
+current issue:  p_cache not working as expected, manually> fc-cache -f seems to..
+009-caches fails 
