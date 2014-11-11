@@ -12,7 +12,7 @@
 #(sleep 3 && /usr/bin/nm-applet --sm-disable) 
 fbsetbg -l &
 conky -q &
-#volumeicon &
+(sleep 5 && volumeicon) &
 #compton --config ~/.config/compton/compton.conf &
 
 # And last but not least we start fluxbox.

@@ -1,12 +1,11 @@
 
 update/correct docs
-identify/supply missing packages
-check configs match
-make it work
-include 32bit
-update/correct docs
+identify/supply missing packages  .done
+check configs match .done
+make it work  .done
+include 32bit  .done
+update/correct docs  .done ish
 rebuild from/include sources
-make like https://github.com/brokenman/xfce.git
+make like https://github.com/brokenman/xfce.git  ..close
  
-current issue:  p_cache not working as expected, manually> fc-cache -f seems to..
-009-caches fails 
+
