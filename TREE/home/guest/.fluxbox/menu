@@ -1,0 +1,85 @@
+[begin] (Porteus Flux)
+               [exec] (Audio Player) {lxterminal -e mocp -T transparent-background}
+               [exec] (File Manager) {lxterminal -e mc --skin=nicedark.ini}
+               [exec] (Terminal) {lxterminal}
+               [exec] (Editor) {lxterminal -e mcedit --skin=nicedark.ini}
+               [exec] (Web Browser) {firefox}
+               [separator] 
+	[submenu] (Accessories)
+		[exec] (MCedit) {lxterminal -e mcedit --skin=nicedark.ini}
+		[exec] (LXTerminal) {lxterminal}
+		[exec] (Xterm) {xterm}
+		[exec] (Screenshot) {/opt/porteus-scripts/lxde/gtk-scrot}
+		[exec] (MidnightCommander) {lxterminal -e mc --skin=nicedark.ini}
+		[exec] (Vi) {lxterminal -e vi}
+		[exec] (Polyglot) {polyglot}
+	[end]
+	[submenu] (Multimedia)
+		[exec] (ALSA mixer) {lxterminal -e alsamixer}
+		[exec] (MOCP) {lxterminal -e mocp -T transparent-background}
+		[exec] (Asunder) {asunder}
+		[exec] (ISO Master) {isomaster}
+		[exec] (Pburn) {pburn}
+	[end]
+	[submenu] (Network)
+		[exec] (FireFox) {firefox}
+		[exec] (gFTP) {gftp}
+		[exec] (Netstatus) {lxterminal}
+                [exec] (Uget) {uget-gtk}
+		[exec] (Pidgin) {pidgin}
+	[end]
+        [submenu] (Preferences)
+                [exec] (Customize Look and Feel) {lxappearance}
+		[exec] (XRandR) {lxterminal -e xrandr --help}
+                [submenu] (Conky)
+                [exec] (Standard Conky) {conkytheme default}
+                [exec] (Min Conky) {conkytheme min} 
+                [exec] (Max Conky) {conkytheme max} 
+                [exec] (Gotham Conky) {conkytheme gotham} 
+                [exec] (Stop Conky) {killall conky} 
+                [exec] (Conky Config) {lxterminal -e mcedit ~/.conkyrc}
+                [end]
+                [submenu] (Compton)
+                [exec] (Start Compton) {compton --config ~/.config/compton/compton.conf}
+                [exec] (Stop Compton) {killall compton}
+                [exec] (Edit Compton.conf) {lxterminal -e mcedit ~/.config/compton/compton.conf}
+                [end]
+	[end]
+	[submenu] (System)
+                [exec] (Porteus Settings Centre) {porteus-settings-centre}
+		[exec] (USM) {usmgui}
+                [exec] (Porteus Faq) {/opt/porteus-scripts/xorg/browser /usr/doc/Porteus-FAQ/index.html}
+                [exec] (Porteus System Info) {psinfo}
+                [exec] (Porteus System Installer) {pinstaller}
+                [exec] (Porteus Save File) {/opt/porteus-scripts/xorg/psu /opt/porteus-scripts/make-changes}
+                [exec] (Porteus Mount Manager) {mount-manager}
+		[exec] (Top) {lxterminal -e top}
+                [exec] (Terminal as root) {gnsu lxterminal}
+		[exec] (File Manager as root) {gnsu lxterminal -e mc --skin=gotar.ini}
+		[exec] (Info) {lxterminal -e info}
+		[exec] (Xkill) {xkill}
+		[separator]
+	[end]
+	[separator]
+	[submenu] (FluxBox)
+		[workspaces] (Workspaces)
+		[submenu] (Styles)
+			[stylesdir] (/usr/share/fluxbox/styles)
+		[end]
+                [submenu] (Wallpaper)
+                        [wallpapers] (~/.wallpaper)
+                [end]
+                [submenu] (Tools)
+                [exec] (Window name) {xprop WM_CLASS|cut -d \" -f 2|xmessage -file - -center} 
+                [exec] (Run) {fbrun -font 10x20 -fg grey -bg black -title run} 
+                [exec] (Regen Menu) {fluxbox-generate_menu} 
+                [end]
+		[config] (Configure)
+		[reconfig] (Reconfig)
+		[restart] (Restart)
+		[separator]
+	[end]	
+	[separator]
+	[exec] (ShutDown) {/opt/porteus-scripts/lxde/shutdownscript}
+	[exit] (Logout)
+[end]
