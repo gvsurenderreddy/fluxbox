@@ -9,7 +9,8 @@
 # Applications you want to run with fluxbox.
 # MAKE SURE THAT APPS THAT KEEP RUNNING HAVE AN & AT THE END.
 
-#(sleep 3 && /usr/bin/nm-applet --sm-disable) 
+#(sleep 5 && /usr/bin/nm-applet --sm-disable)
+xdg_menu --format fluxbox --root-menu /etc/xdg/menus/arch-applications.menu >~/.fluxbox/my-menu &
 fbsetbg -l &
 conky -q &
 (sleep 5 && volumeicon) &

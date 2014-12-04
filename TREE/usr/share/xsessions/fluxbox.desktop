@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=icewm
+Name[en_US]=fluxbox
+Comment=Simple and fast window manger
+Terminal=false
+Exec=startfluxbox
+TryExec=startfluxbox

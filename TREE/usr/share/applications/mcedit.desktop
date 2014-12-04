@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=lxterminal -e mcedit --skin=nicedark.ini
+Icon=editor
+Name=MCedit
+Type=Application
+Categories=Utility;
+NotShowIn=KDE;

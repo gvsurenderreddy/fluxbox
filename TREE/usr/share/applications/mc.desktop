@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=lxterminal -e mc --skin=nicedark.ini
+Icon=file-manager
+Name=MidnightCommander
+Type=Application
+Categories=Utility;
+NotShowIn=KDE;

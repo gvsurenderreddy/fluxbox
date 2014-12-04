@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=lxterminal -e mocp -T transparent-background
+Icon=audio-player
+Name=MusicOnConsole
+Type=Application
+Categories=AudioVideo;
+NotShowIn=KDE;

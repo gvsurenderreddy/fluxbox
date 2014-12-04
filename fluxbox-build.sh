@@ -1,6 +1,6 @@
 #!/bin/bash
 
-## Build xfce desktop.
+## Build Fluxbox desktop.
 ## This script must be run from the root of the xfce dev folder
 ## The following folders should exist
 

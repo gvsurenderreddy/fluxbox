@@ -1,0 +1,7 @@
+[Desktop Entry]
+Exec=gnsu lxterminal -e mc --skin=gotar.ini
+Icon=system-file-manager
+Name=Super User Mode - MC 
+Type=Application
+Categories=System;
+NotShowIn=KDE;

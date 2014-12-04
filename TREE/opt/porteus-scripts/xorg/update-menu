@@ -1,7 +1,7 @@
 #!/bin/sh
-# Update LXDE menu:
+# Update Fluxbox menu:
 
-echo "Updating LXDE menu: update-desktop-database"
-for x in `ps -C lxsession -o user=`; do su --login $x -c "rm ~/.cache/menus/* >/dev/null 2>&1; /usr/libexec/menu-cache/menu-cached >/dev/null 2>&1; lxpanelctl restart"; done
+echo "Updating fluxbox menu: update-desktop-database"
+for x in `ps -C fluxbox -o user=`; do su --login $x -c "xdg_menu --format fluxbox --root-menu /etc/xdg/menus/arch-applications.menu >~/.fluxbox/my-menu"
 update-desktop-database
 
